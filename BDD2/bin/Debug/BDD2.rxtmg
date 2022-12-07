@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="BDD2"
+      id="a47d08fa-dc1d-4697-898b-69b213c30832"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="BDD2"
+      id="a47d08fa-dc1d-4697-898b-69b213c30832"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

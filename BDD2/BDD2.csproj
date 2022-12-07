@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.props" Condition="Exists('..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.props')" />
+  <Import Project="..\packages\NUnit.3.13.3\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{6C47EC14-8DBC-4BD3-B1A0-8BEF192D60FF}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BDD2</RootNamespace>
+    <AssemblyName>BDD2</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>aa297225-38b4-4efd-bbf3-c54ea6387718</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BoDi">
+      <HintPath>..\packages\BoDi.1.5.0\lib\net45\BoDi.dll</HintPath>
+    </Reference>
+    <Reference Include="Gherkin">
+      <HintPath>..\packages\Gherkin.19.0.3\lib\net45\Gherkin.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.13.3\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SpecFlow.Internal.Json">
+      <HintPath>..\packages\SpecFlow.Internal.Json.1.0.8\lib\net45\SpecFlow.Internal.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\packages\SpecFlow.3.9.74\lib\net461\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow.NUnit.SpecFlowPlugin">
+      <HintPath>..\packages\SpecFlow.NUnit.3.9.74\lib\net461\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>18e48841-abd5-4ecc-aa19-c3bf6c83632b</id>
+    </Compile>
+    <Compile Include="BDD2Repository.cs">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <DependentUpon>BDD2Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>1144fe85-51ad-4a37-ba71-160a28053074</id>
+    </Compile>
+    <Compile Include="CloseAUT.cs">
+      <BoundTo>290e7232-1b31-4116-b124-2dfe78a64d44</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db72c168-6157-4656-a63a-c75149a9d093</id>
+    </Compile>
+    <Compile Include="CloseAUT.UserCode.cs">
+      <BoundTo>290e7232-1b31-4116-b124-2dfe78a64d44</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f76f0dba-c318-4503-b4de-326f82837846</id>
+    </Compile>
+    <Compile Include="Feature\Addition.cs">
+      <id>2248fbd8-e2f1-4cf4-a0cb-a9b5c236519f</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>0ff8354f-aea7-4903-9c83-2612b557bd40</id>
+    </Compile>
+    <Compile Include="Recordings\PressEquals.cs">
+      <BoundTo>62d085a6-8204-4d75-aae8-a81b52bb7da7</BoundTo>
+      <DependentUpon>PressEquals.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>031c807d-66d4-401b-8040-857aadcfbe1f</id>
+    </Compile>
+    <Compile Include="Recordings\PressEquals.UserCode.cs">
+      <BoundTo>62d085a6-8204-4d75-aae8-a81b52bb7da7</BoundTo>
+      <DependentUpon>PressEquals.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>21ee9690-1e25-4626-a82f-9f992d9e7862</id>
+    </Compile>
+    <Compile Include="Recordings\EnterNumber.cs">
+      <BoundTo>85f92b45-4850-46ac-aa76-85145c45d4dd</BoundTo>
+      <DependentUpon>EnterNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65e62fa3-9cda-4c33-a851-b4ac2514e195</id>
+    </Compile>
+    <Compile Include="Recordings\EnterNumber.UserCode.cs">
+      <BoundTo>85f92b45-4850-46ac-aa76-85145c45d4dd</BoundTo>
+      <DependentUpon>EnterNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9bdd506-89c5-49bd-867c-b0d2ebd937dc</id>
+    </Compile>
+    <Compile Include="Recordings\PressAdd.cs">
+      <BoundTo>f022ef08-7d6c-4023-a1e2-08633da3d18e</BoundTo>
+      <DependentUpon>PressAdd.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f884c0a4-402a-4e4e-bdca-279fe0ca4459</id>
+    </Compile>
+    <Compile Include="Recordings\PressAdd.UserCode.cs">
+      <BoundTo>f022ef08-7d6c-4023-a1e2-08633da3d18e</BoundTo>
+      <DependentUpon>PressAdd.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa943313-622c-46c9-b010-56710fb525e0</id>
+    </Compile>
+    <Compile Include="Recordings\ValidateScreen.cs">
+      <BoundTo>5376ee2b-9d83-4cb4-ac85-d26f33929a01</BoundTo>
+      <DependentUpon>ValidateScreen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02cc264b-cae4-49fd-8cb7-943a888016f9</id>
+    </Compile>
+    <Compile Include="Recordings\ValidateScreen.UserCode.cs">
+      <BoundTo>5376ee2b-9d83-4cb4-ac85-d26f33929a01</BoundTo>
+      <DependentUpon>ValidateScreen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3e4fa9a7-d6cc-42c2-aa27-9cca98733e79</id>
+    </Compile>
+    <Compile Include="StartAUT.cs">
+      <BoundTo>8f2e3f0b-0a3e-4270-af10-d507f5d454c6</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>180e2a4a-d6aa-4314-9981-670670c9bcd7</id>
+    </Compile>
+    <Compile Include="StartAUT.UserCode.cs">
+      <BoundTo>8f2e3f0b-0a3e-4270-af10-d507f5d454c6</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>049aa8a8-62c6-4307-b9f4-c81249b5bf86</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>aa0f9b3e-d8fc-4e9d-af7f-113f3d02cfe2</id>
+    </None>
+    <None Include="BDD2Repository.rximg">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <DependentUpon>BDD2Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>dbed68b2-acdf-447e-9a5e-37551428c1c8</id>
+    </None>
+    <None Include="BDD2Repository.rxrep">
+      <id>aa297225-38b4-4efd-bbf3-c54ea6387718</id>
+      <repoid>dd5934e3-35b9-4600-a4f2-b966f5d5fb7e</repoid>
+      <reporootid>aba3d134-d690-4e9e-a01a-c85b8b97c0e1</reporootid>
+    </None>
+    <None Include="CloseAUT.rxrec">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <id>290e7232-1b31-4116-b124-2dfe78a64d44</id>
+      <recordtableid>ff71a612-4f96-4a99-8e43-7829c077a699</recordtableid>
+    </None>
+    <None Include="Feature\Addition.feature">
+      <id>26928b9b-5eb2-4de6-b220-2db79197d5b6</id>
+    </None>
+    <None Include="packages.config">
+      <id>5e5fdc8b-845c-4539-a68a-443a5c3d6255</id>
+    </None>
+    <None Include="Recordings\PressEquals.rxrec">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <id>62d085a6-8204-4d75-aae8-a81b52bb7da7</id>
+      <recordtableid>b6dc74fa-dddf-4a2a-930b-8a20d4a98f29</recordtableid>
+    </None>
+    <None Include="Recordings\EnterNumber.rxrec">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <id>85f92b45-4850-46ac-aa76-85145c45d4dd</id>
+      <recordtableid>7f2525d3-e661-40f8-968d-4daf05d508bb</recordtableid>
+    </None>
+    <None Include="Recordings\PressAdd.rxrec">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <id>f022ef08-7d6c-4023-a1e2-08633da3d18e</id>
+      <recordtableid>7734d682-15cd-4eba-8ff4-0f7980519432</recordtableid>
+    </None>
+    <None Include="Recordings\ValidateScreen.rxrec">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <id>5376ee2b-9d83-4cb4-ac85-d26f33929a01</id>
+      <recordtableid>41b59cb9-136b-498f-917e-74a7979e4663</recordtableid>
+    </None>
+    <None Include="StartAUT.rxrec">
+      <BoundTo>aa297225-38b4-4efd-bbf3-c54ea6387718</BoundTo>
+      <id>8f2e3f0b-0a3e-4270-af10-d507f5d454c6</id>
+      <recordtableid>6d6c6779-4706-4886-814e-df5ca8ee0b55</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BDD2.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>469b816e-e3cd-4fa1-98b9-a504793ccaf0</id>
+    </Content>
+    <Content Include="BDD2.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e5fbffd1-ce55-46f4-890e-27c121f8695b</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Feature">
+      <id>05c531fb-b239-4d36-9d18-9f3608d6c3bf</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>fa9ec517-55c2-473d-a7f8-c8adc1b4fc08</id>
+    </Folder>
+    <Folder Include="Step">
+      <id>f73d6310-f8bf-4ced-b451-23e9ada346fc</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+  <Import Project="..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.targets" Condition="Exists('..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.targets')" />
+</Project>

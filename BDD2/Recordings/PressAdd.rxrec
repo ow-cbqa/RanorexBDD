@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7734d682-15cd-4eba-8ff4-0f7980519432"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="PressAdd"
+	namespace="BDD2.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="7;13"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d9d810f6-42b3-4889-b86e-6390e55da172"
+		sx="1510"
+		sy="570"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f5b0b6ce-b478-4120-97b8-edaed36d78f8"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationscrollitem"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="1503,557,14,14"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						TextBlock
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Text
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						XAML
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						texto
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						1164
+					</attribute>
+				</element>
+				<path>
+					/winapp[@packagename='Microsoft.WindowsCalculator']//button[@automationid='plusButton']/text[@name='']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="db0e8b5b-cb0c-4be0-942a-87316bc63153">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABIAFQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDaf/XG
+jIqKbKvgGo8t6/pVklnI9aMj1qtlvX9KPm9f0oAs5HrRketVvm9f0o+b1H5UAWcj1oyPWq3zev6U
+Zb1/SgCzketGarZb1/SjLetADz1NFIOQKKYDrj/W1HUlx/rajpAFFFFABRWfA15cIXSZQAccgf4U
+9ResWCzxnacHjv8AlUKd+h0Sw/K7OS/H/Iu0VTtpJ/tbwzOG2rngfT/GrlVF3M6kHB2YUdqKDTMx
+y/dFFC/dFFMB1x/rajqS4/1tR0gCiiigChYGUW58pEb5znc5XsPY0+BrnfNiKI/vOcyn0H+zUNrL
+NbxlPs0jZOc4I/pRFeCJnUITIxMjIzc9T0+mOnbr0zjKElynViKcnUb7+ZLDn+05dwAOwZAOfSrt
+U7MPJqDSPG0YZcfMOnSpWvYUYq+VZTggyxAg/wDfdVB6E117yXkieg0rDBxgg45Bxke3FIas5xy/
+dFFC/dFFMB1x/rajp85zJkcimZ9j+VIAopM+x/KjPsfyoAWub1NZftjSxBh5XzF1/h+c4Oe3NdHu
+9j+VRGNTA8bLuDbs8YznPfn1xmkxojsvtK26m5iVeg+RlYHPQgA9P5duOlK7Ea3qxSyuY2O6Qjj5
+iH+UnOBu446fMxG0E1qQKsMcceGKIAvPUgf/AFqie2Dhw3kkOSWHkNyTyf8Alp/nA9BhWAsbi3zH
+OTzyMH8qD0pWbc2cZJ6kLjJ78c038D+VUIev3RRQv3RRTAbefK4C5H0qvk/3m/OiirjsZy3Eyf7z
+fmaOf7zfmaKKqxNw5/vN/wB9Gjn+83/fRooosFw5/vN+Zo5/vN+ZooosFxcn+835mjJ/vN+dFFAX
+LMf+rXPpRRRWRqf/2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="dd5934e3-35b9-4600-a4f2-b966f5d5fb7e"
+	name="BDD2Repository"
+	relativepath="..\BDD2Repository.rxrep">
+		<codegen
+		classname="BDD2Repository"
+		namespace="BDD2">
+		</codegen>
+		<rootfolder
+		id="aba3d134-d690-4e9e-a01a-c85b8b97c0e1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		PressAdd.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

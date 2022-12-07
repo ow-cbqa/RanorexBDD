@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6d6c6779-4706-4886-814e-df5ca8ee0b55"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="BDD2">
+	</codegen>
+	<variables>
+		<var
+		id="25531e2f-7231-483e-8061-eafc22698846"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="dd5934e3-35b9-4600-a4f2-b966f5d5fb7e"
+	name="BDD2Repository"
+	relativepath="BDD2Repository.rxrep">
+		<codegen
+		classname="BDD2Repository"
+		namespace="BDD2">
+		</codegen>
+		<rootfolder
+		id="aba3d134-d690-4e9e-a01a-c85b8b97c0e1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BDD2</name>
+    </assembly>
+    <members>
+        <member name="T:BDD2.BDD2Repository">
+            <summary>
+            The class representing the BDD2Repository element repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.BDD2Repository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2Repository.Instance">
+            <summary>
+            Gets the singleton class instance representing the BDD2Repository element repository.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2Repository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2Repository.Calculadora">
+            <summary>
+            The Calculadora folder.
+            </summary>
+        </member>
+        <member name="T:BDD2.BDD2RepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder">
+            <summary>
+            The CalculadoraAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Calculadora  folder.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.Screen">
+            <summary>
+            The Screen item.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.ScreenInfo">
+            <summary>
+            The Screen item info.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.PlusBtn">
+            <summary>
+            The PlusBtn item.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.PlusBtnInfo">
+            <summary>
+            The PlusBtn item info.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.EqualsBtn">
+            <summary>
+            The EqualsBtn item.
+            </summary>
+        </member>
+        <member name="P:BDD2.BDD2RepositoryFolders.CalculadoraAppFolder.EqualsBtnInfo">
+            <summary>
+            The EqualsBtn item info.
+            </summary>
+        </member>
+        <member name="T:BDD2.CloseAUT">
+             <summary>
+            The CloseAUT recording.
+             </summary>
+        </member>
+        <member name="F:BDD2.CloseAUT.repo">
+            <summary>
+            Holds an instance of the BDD2Repository repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.CloseAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:BDD2.CloseAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:BDD2.CloseAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:BDD2.CloseAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:BDD2.CloseAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:BDD2.CloseAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:BDD2.CloseAUT.CloseAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable CloseAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:BDD2.Recordings.PressEquals">
+             <summary>
+            The PressEquals recording.
+             </summary>
+        </member>
+        <member name="F:BDD2.Recordings.PressEquals.repo">
+            <summary>
+            Holds an instance of the global::BDD2.BDD2Repository repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.PressEquals.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.PressEquals.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:BDD2.Recordings.PressEquals.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.PressEquals.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:BDD2.Recordings.PressEquals.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:BDD2.Recordings.PressEquals.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:BDD2.Recordings.EnterNumber">
+             <summary>
+            The EnterNumber recording.
+             </summary>
+        </member>
+        <member name="F:BDD2.Recordings.EnterNumber.repo">
+            <summary>
+            Holds an instance of the global::BDD2.BDD2Repository repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.EnterNumber.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.EnterNumber.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:BDD2.Recordings.EnterNumber.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.EnterNumber.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:BDD2.Recordings.EnterNumber.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:BDD2.Recordings.EnterNumber.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:BDD2.Recordings.EnterNumber.Input">
+            <summary>
+            Gets or sets the value of variable Input.
+            </summary>
+        </member>
+        <member name="T:BDD2.Recordings.PressAdd">
+             <summary>
+            The PressAdd recording.
+             </summary>
+        </member>
+        <member name="F:BDD2.Recordings.PressAdd.repo">
+            <summary>
+            Holds an instance of the global::BDD2.BDD2Repository repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.PressAdd.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.PressAdd.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:BDD2.Recordings.PressAdd.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.PressAdd.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:BDD2.Recordings.PressAdd.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:BDD2.Recordings.PressAdd.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:BDD2.Recordings.ValidateScreen">
+             <summary>
+            The ValidateScreen recording.
+             </summary>
+        </member>
+        <member name="F:BDD2.Recordings.ValidateScreen.repo">
+            <summary>
+            Holds an instance of the global::BDD2.BDD2Repository repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.ValidateScreen.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.ValidateScreen.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:BDD2.Recordings.ValidateScreen.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:BDD2.Recordings.ValidateScreen.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:BDD2.Recordings.ValidateScreen.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:BDD2.Recordings.ValidateScreen.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:BDD2.Recordings.ValidateScreen.ExpectedResult">
+            <summary>
+            Gets or sets the value of variable ExpectedResult.
+            </summary>
+        </member>
+        <member name="T:BDD2.StartAUT">
+             <summary>
+            The StartAUT recording.
+             </summary>
+        </member>
+        <member name="F:BDD2.StartAUT.repo">
+            <summary>
+            Holds an instance of the BDD2Repository repository.
+            </summary>
+        </member>
+        <member name="M:BDD2.StartAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:BDD2.StartAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:BDD2.StartAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:BDD2.StartAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:BDD2.StartAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:BDD2.StartAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:BDD2.StartAUT.StartAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

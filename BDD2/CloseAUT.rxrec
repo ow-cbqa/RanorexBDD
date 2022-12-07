@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ff71a612-4f96-4a99-8e43-7829c077a699"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="BDD2">
+	</codegen>
+	<variables>
+		<var
+		id="8ccf002f-7e52-432c-a844-022a995a859c"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="75188589-c565-415f-bc81-59bf5ee6455b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="dd5934e3-35b9-4600-a4f2-b966f5d5fb7e"
+	name="BDD2Repository"
+	relativepath="BDD2Repository.rxrep">
+		<codegen
+		classname="BDD2Repository"
+		namespace="BDD2">
+		</codegen>
+		<rootfolder
+		id="aba3d134-d690-4e9e-a01a-c85b8b97c0e1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
